@@ -4,10 +4,6 @@
     { "id": 2, "title": "Post 2" , "completed": false },
     { "id": 3, "title": "Post 3" , "completed": true }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
   "clientes": [
     { "id": 1, "nome": "zezinho"  },
     { "id": 2, "nome": "bibinho" }
@@ -21,10 +17,6 @@
     { "id": 1, "nome": "pistão B", "categoria": 1 },
     { "id": 2, "nome": "vela A", "categoria": 2 },
     { "id": 2, "nome": "vela B", "categoria": 2 }
-  ],
-  "vendedor": [
-    { "id": 1, "nome": "Leo", "comissao": 0.05 },
-    { "id": 2, "nome": "João", "comissao": 0.03 }
   ],
   "profile": {
     "name": "typicode"
