@@ -1,8 +1,8 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" , "completed": true },
-    { "id": 2, "title": "Post 2" , "completed": false },
-    { "id": 3, "title": "Post 3" , "completed": true }
+  "impostos": [
+    { "id": 1, "title": "sindical" , "percentual": 0.05 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 3, "title": "ICMS" , "percentual": 0.10 }
   ],
   "clientes": [
     { "id": 1, "nome": "zezinho", "email": "a@a.com", "telefone": "2722-2222", "obs": "teste"  },
