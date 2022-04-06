@@ -9,8 +9,8 @@
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
   "clientes": [
-    { "id": 1, "nome": "zezinho", "email": "fernando.carvalho.iff@gmail.com" },
-    { "id": 2, "nome": "bibinho", "email": "lhencar@gmail.com" }
+    { "id": 1, "nome": "zezinho"  },
+    { "id": 2, "nome": "bibinho" }
   ],
   "categorias": [
     { "id": 1, "nome": "pistão" },
