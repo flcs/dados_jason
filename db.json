@@ -8,6 +8,24 @@
     { "id": 1, "body": "some comment", "postId": 1 },
     { "id": 2, "body": "some comment", "postId": 1 }
   ],
+  "clientes": [
+    { "id": 1, "nome": "zezinho", "email": "fernando.carvalho.iff@gmail.com" },
+    { "id": 2, "nome": "bibinho", "email": "lhencar@gmail.com" }
+  ],
+  "categorias": [
+    { "id": 1, "nome": "pistão" },
+    { "id": 2, "nome": "vela" }
+  ],
+  "produtos": [
+    { "id": 1, "nome": "pistão A", "categoria": 1 },
+    { "id": 1, "nome": "pistão B", "categoria": 1 },
+    { "id": 2, "nome": "vela A", "categoria": 2 },
+    { "id": 2, "nome": "vela B", "categoria": 2 }
+  ],
+  "vendedor": [
+    { "id": 1, "nome": "Leo", "comissao": 0.05 },
+    { "id": 2, "nome": "João", "comissao": 0.03 }
+  ],
   "profile": {
     "name": "typicode"
   }
