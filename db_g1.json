@@ -1,0 +1,22 @@
+{
+	"impostos": [
+		{ "id": 1, "nome": "IR", "percentual": 0.25 },
+		{ "id": 2, "nome": "INSS", "percentual": 0.14 },
+		{ "id": 3, "nome": "ICMS", "percentual": 0.05 }
+	],
+	"recolhimento_impostos": [
+		{ "id": 1, "imposto": 1, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 2, "imposto": 2, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 3, "imposto": 3, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 }
+	],
+	"transportadores": [
+		{ "id": 1, "nome": "Zé das Coves Transportes LTDA.", "preco_Kg_Km": 0.50 },
+		{ "id": 2, "nome": "João da Padaria Transportes LTDA.", "preco_Kg_Km": 0.55 },
+		{ "id": 3, "nome": "Paulinho das Candongas Transportes LTDA.", "preco_Kg_Km": 0.60 }
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+

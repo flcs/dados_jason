@@ -1,0 +1,22 @@
+{
+	"": [
+		{ "id": 1, "cnpj": "11.111.111.1111/11", "nome": "João", "nivel_desconto": 0.05, "area": "Centro"  },
+	],
+	"": [
+		{ "id": 1, "cliente": 1, "produto": 1, "desconto": 0.01 },
+	], 
+	"": [
+		{ "id": 1, "imposto": 1, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 },
+	],
+	"": [
+		{ "id": 1, "nome": "Zé das Coves Transportes LTDA.", "preco_Kg_Km": 0.50 },
+	],
+	"": [
+		{ "id": 1, "data": "2022/04/01", "hora": "12:30:00", "vendedor": 1, "cliente": 1, "ofereceu": "pista"  },
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+

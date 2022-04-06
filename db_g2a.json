@@ -1,0 +1,32 @@
+{
+	"cliente": [
+		{ "id": 1, "cnpj": "11.111.111.1111/11", "nome": "João", "nivel_desconto": 0.05, "area": "Centro"  },
+		{ "id": 2, "cnpj": "22.222.222.2222/22", "nome": "Pedro", "nivel_desconto": 0.03, "area": "Centro"  },
+		{ "id": 3, "cnpj": "33.333.333.3333/33", "nome": "Serafim", "nivel_desconto": 0.10, "area": "Centro"  }
+	],
+	"cliente_produto": [
+		{ "id": 1, "cliente": 1, "produto": 1, "desconto": 0.01 },
+		{ "id": 2, "cliente": 2, "produto": 1, "desconto": 0.02 },
+		{ "id": 3, "cliente": 3, "produto": 2, "desconto": 0.01 }
+	], 
+	"recolhimento_impostos": [
+		{ "id": 1, "imposto": 1, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 2, "imposto": 2, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 3, "imposto": 3, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 }
+	],
+	"transportadores": [
+		{ "id": 1, "nome": "Zé das Coves Transportes LTDA.", "preco_Kg_Km": 0.50 },
+		{ "id": 2, "nome": "João da Padaria Transportes LTDA.", "preco_Kg_Km": 0.55 },
+		{ "id": 3, "nome": "Paulinho das Candongas Transportes LTDA.", "preco_Kg_Km": 0.60 }
+	],
+	"prospeccao_vendas": [
+		{ "id": 1, "data": "2022/04/01", "hora": "12:30:00", "vendedor": 1, "cliente": 1, "ofereceu": "pista"  },
+		{ "id": 2, "data": "2022/04/01", "hora": "12:30:00", "vendedor": 2, "cliente": 2, "ofereceu": "vela"  },
+		{ "id": 3, "data": "2022/04/01", "hora": "12:30:00", "vendedor": 1, "cliente": 3, "ofereceu": "bla, bla, bla"  }
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
