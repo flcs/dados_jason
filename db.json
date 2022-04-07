@@ -2,6 +2,14 @@
   "impostos": [
     { "id": 1, "title": "sindical" , "percentual": 0.05 },
     { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
+    { "id": 2, "title": "IR" , "percentual": 0.25 },
     { "id": 3, "title": "ICMS" , "percentual": 0.10 }
   ],
   "clientes": [
