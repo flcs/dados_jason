@@ -13,7 +13,7 @@
     { "id": 3, "title": "ICMS" , "percentual": 0.10 }
   ],
   "clientes": [
-    { "id": 1, "nome": "zezinho", "email": "a@a.com", "telefone": "2722-2222", "obs": "teste"  },
+    { "id": 1, "nome": "zezinho", "email": "a@a.com", "telefone": "2722-2222", "obs": "teste" },
     { "id": 2, "nome": "bibinho", "email": "a@a.com", "telefone": "2722-2222", "obs": "teste" }
   ],
   "categorias": [
@@ -25,6 +25,10 @@
     { "id": 2, "nome": "pistão B", "categoria": 1 },
     { "id": 3, "nome": "vela A", "categoria": 2 },
     { "id": 4, "nome": "vela B", "categoria": 2 }
+  ],
+  "sobrou": [
+    { "id": 1, "nome": "zezinho", "email": "a@a.com", "telefone": "2722-2222", "obs": "teste" },
+    { "id": 2, "nome": "bibinho", "email": "a@a.com", "telefone": "2722-2222", "obs": "teste" } 
   ],
   "profile": {
     "name": "typicode"
