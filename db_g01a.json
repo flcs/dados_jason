@@ -10,9 +10,19 @@
 		{ "id": 3, "imposto": 3, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 }
 	],
 	"transportadores": [
-		{ "id": 1, "nome": "Zé das Coves Transportes LTDA.", "preco_Kg_Km": 0.50 },
-		{ "id": 2, "nome": "João da Padaria Transportes LTDA.", "preco_Kg_Km": 0.55 },
-		{ "id": 3, "nome": "Paulinho das Candongas Transportes LTDA.", "preco_Kg_Km": 0.60 }
+		{ "id": 1, "nome": "Zé das Coves Transportes LTDA.",		"preco_Kg_Km": 0.50, "email": "ze@zecoves.com.br" },
+		{ "id": 2, "nome": "João da Padaria Transportes LTDA.",		"preco_Kg_Km": 0.55, "email": "jao@padtransp.com.br" },
+		{ "id": 3, "nome": "Paulinho das Candongas Transportes LTDA.",	"preco_Kg_Km": 0.60, "email": "paulo@transpaulo.com.br" }
+	],
+	"transportador_area": [
+		{ "transportador": 1, "area": 1, "preco_Kg_Km": 0.50 },
+		{ "transportador": 1, "area": 2, "preco_Kg_Km": 0.55 },
+		{ "transportador": 2, "area": 1, "preco_Kg_Km": 0.50 },
+		{ "transportador": 2, "area": 2, "preco_Kg_Km": 0.55 },
+		{ "transportador": 2, "area": 3, "preco_Kg_Km": 0.40 },
+		{ "transportador": 3, "area": 4, "preco_Kg_Km": 0.70 }
+	],
+	"sobrou2": [
 	],
 	"profile": {
 	    "name": "typicode"

@@ -1,0 +1,585 @@
+{
+	"impostos": [
+		{ "id": 1, "nome": "IR", "percentual": 0.25 },
+		{ "id": 2, "nome": "INSS", "percentual": 0.14 },
+		{ "id": 3, "nome": "ICMS", "percentual": 0.05 }
+	],
+	"recolhimento_impostos": [
+		{ "id": 1, "imposto": 1, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 2, "imposto": 2, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 3, "imposto": 3, "data": "2022/04/01", "valor_base": 1000.00, "valor_recolher": 10.00 }
+	],
+	"transportadores": [
+		{ "id": 1, "nome": "Zé das Coves Transportes LTDA.",		"preco_Kg_Km": 0.50, "email": "ze@zecoves.com.br" },
+		{ "id": 2, "nome": "João da Padaria Transportes LTDA.",		"preco_Kg_Km": 0.55, "email": "jao@padtransp.com.br" },
+		{ "id": 3, "nome": "Paulinho das Candongas Transportes LTDA.",	"preco_Kg_Km": 0.60, "email": "paulo@transpaulo.com.br" }
+	],
+	"transportador_area": [
+		{ "transportador": 1, "area": 1, "preco_Kg_Km": 0.50 },
+		{ "transportador": 1, "area": 2, "preco_Kg_Km": 0.55 },
+		{ "transportador": 2, "area": 1, "preco_Kg_Km": 0.50 },
+		{ "transportador": 2, "area": 2, "preco_Kg_Km": 0.55 },
+		{ "transportador": 2, "area": 3, "preco_Kg_Km": 0.40 },
+		{ "transportador": 3, "area": 4, "preco_Kg_Km": 0.70 }
+	],
+	"sobrou2": [
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"areas": [
+		{ "id": 1, "nome": "Centro Rio", "descrição": "cidade do Rio" },
+		{ "id": 2, "nome": "Baixada", "descrição": "RJ" },
+		{ "id": 3, "nome": "Fonseca", "descrição": "bairro de Niterói/RJ" },
+		{ "id": 4, "nome": "Campos", "descrição": "município oeste RJ" }
+	],
+	"clientes": [
+		{ "id": 1, "cnpj": "11.111.111.1111/11", "nome": "João Eletricista", "nivel_desconto": 0.05, "area": 1  },
+		{ "id": 2, "cnpj": "22.222.222.2222/22", "nome": "Pedro AutoPeças", "nivel_desconto": 0.03, "area": 4  },
+		{ "id": 3, "cnpj": "33.333.333.3333/33", "nome": "Serafim AutoElétrica", "nivel_desconto": 0.10, "area": 2  }
+	],
+	"clientes_produtos": [
+		{ "id": 1, "cliente": 1, "produto": 1, "desconto": 0.01 },
+		{ "id": 2, "cliente": 2, "produto": 1, "desconto": 0.02 },
+		{ "id": 3, "cliente": 3, "produto": 2, "desconto": 0.01 }
+	], 
+	"recolhimento_impostos": [
+		{ "id": 1, "data": "2022/04/01", "imposto": 1, "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 2, "data": "2022/04/01", "imposto": 2, "valor_base": 1000.00, "valor_recolher": 10.00 },
+		{ "id": 3, "data": "2022/04/01", "imposto": 3, "valor_base": 1000.00, "valor_recolher": 10.00 }
+	],
+	"prospeccao_vendas": [
+		{ "id": 1, "data": "2022/04/01", "hora": "12:30:00", "vendedor": 1, "cliente": 1, "relato": "ofereceu pistao"  },
+		{ "id": 2, "data": "2022/04/01", "hora": "12:30:00", "vendedor": 2, "cliente": 2, "relato": "ofereceu vela"  },
+		{ "id": 3, "data": "2022/04/01", "hora": "12:30:00", "vendedor": 1, "cliente": 3, "relato": "bla, bla, bla"  }
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"historico_movimentacoes_produto": [
+		{ "id": 1, "produto": 1, "data": "2022/04/01", "operacao": "Compra", "quantidade": 100, "nota": 1, "operador": "zé"  },
+		{ "id": 2, "produto": 2, "data": "2022/04/01", "operacao": "Venda", "quantidade": 100, "nota": 2, "operador": "paulo"  },
+		{ "id": 3, "produto": 3, "data": "2022/04/01", "operacao": "Compra", "quantidade": 100, "nota": 3, "operador": "andre"  }
+	],
+	"cliente_pagamentos": [
+		{ "id": 1, "cliente": 1, "titulo_bancario": 1, "data_vencimento": "2022/04/01", "status": "em dia", "data_pagamento": "2022/04/01", "valor_pago": 100.00 },
+		{ "id": 2, "cliente": 1, "titulo_bancario": 1, "data_vencimento": "2022/04/01", "status": "falta", "data_pagamento": "2022/04/01", "valor_pago": 0.00 },
+		{ "id": 3, "cliente": 1, "titulo_bancario": 1, "data_vencimento": "2022/04/01", "status": "atraso", "data_pagamento": "2022/04/01", "valor_pago": 123.45 }
+	], 
+	"produtos": [
+		{ "id": 1, "nome": "pistão A", "categoria": 1, "peso_kg": 1.00 },
+		{ "id": 2, "nome": "pistão B", "categoria": 1, "peso_kg": 1.15 },
+		{ "id": 3, "nome": "vela A", "categoria": 2, "peso_kg": 0.50 },
+		{ "id": 4, "nome": "vela B", "categoria": 2, "peso_kg": 0.63 }
+	],
+	"estoque": [
+		{ "id": 1, "nome": "baixada",   "endereco": "rua sobe e desce, nr desaparace, new iguaçu/rj", "telefone": "21 3500-0000", "obs": "" },
+		{ "id": 2, "nome": "freguesia", "endereco": "rua sobe e desce, nr novo, freguesia/sp", "telefone": "21 3500-0000", "obs": "" },
+		{ "id": 3, "nome": "nikiti",    "endereco": "rua sobe e desce, nr perdido, fonseca-niterói/rj", "telefone": "21 2620-0000", "obs": "" }
+	],
+	"estoque_produto": [
+		{ "id": 1, "estoque": 1, "produto": 1, "endereco": "AR01D02P3A4", "saldo": 100, "disponivel": 90 },
+		{ "id": 2, "estoque": 2, "produto": 3, "endereco": "AR01D02P3A4", "saldo": 100, "disponivel": 90 },
+		{ "id": 3, "estoque": 3, "produto": 2, "endereco": "AR01D02P3A4", "saldo": 100, "disponivel": 90 }
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"orcamento_cliente": [
+		{ "id": 1, "vendedor": 2, "cliente": 1, "data_contato": "2022/04/01", "data_fechamento": "2022/04/01", "estado": "aguardando", "end_entr": "rua do sobe e desce, nr desaparece", "nota_fiscal_venda": 0  },
+		{ "id": 2, "vendedor": 2, "cliente": 1, "data_contato": "2022/04/01", "data_fechamento": "2022/04/01", "estado": "cancelado", "end_entr": "rua do sobe e desce, nr desaparece", "nota_fiscal_venda": 0  },
+		{ "id": 3, "vendedor": 2, "cliente": 1, "data_contato": "2022/04/01", "data_fechamento": "2022/04/01", "estado": "solicitado", "end_entr": "rua do sobe e desce, nr desaparece", "nota_fiscal_venda": 0  },
+		{ "id": 4, "vendedor": 2, "cliente": 1, "data_contato": "2022/04/01", "data_fechamento": "2022/04/01", "estado": "negado", "end_entr": "rua do sobe e desce, nr desaparece", "nota_fiscal_venda": 0  },
+		{ "id": 5, "vendedor": 2, "cliente": 1, "data_contato": "2022/04/01", "data_fechamento": "2022/04/01", "estado": "processando", "end_entr": "rua do sobe e desce, nr desaparece", "nota_fiscal_venda": 0  },
+		{ "id": 6, "vendedor": 2, "cliente": 1, "data_contato": "2022/04/01", "data_fechamento": "2022/04/01", "estado": "faturado", "end_entr": "rua do sobe e desce, nr desaparece", "nota_fiscal_venda": 1  }
+	],
+	"orcamento_produto": [
+		{ "id": 1, "orcamento": 1, "produto": 5, "quantidade": 2,	"preco":  5.00, "desconto": 0.01 },
+		{ "id": 2, "orcamento": 1, "produto": 3, "quantidade": 1,	"preco": 15.00, "desconto": 0.00 },
+		{ "id": 3, "orcamento": 3, "produto": 1, "quantidade": 10,	"preco":  1.00, "desconto": 0.00 },
+		{ "id": 4, "orcamento": 3, "produto": 2, "quantidade": 1,	"preco": 25.00, "desconto": 0.00 }
+	], 
+	"nota_fiscal_venda": [
+		{ "id": 1, "imposto": 1, "data_emissao": "2022/04/01", "valor_base": 1000.00, "valor_imposto": 10.00, "transportador": 1, "forma_pgto": 1, "vezes": 1 },
+		{ "id": 2, "imposto": 2, "data_emissao": "2022/04/01", "valor_base": 1000.00, "valor_imposto": 10.00, "transportador": 1, "forma_pgto": 2, "vezes": 5 },
+		{ "id": 3, "imposto": 3, "data_emissao": "2022/04/01", "valor_base": 1000.00, "valor_imposto": 10.00, "transportador": 1, "forma_pgto": 1, "vezes": 3 }
+	],
+	"sobrando": [
+	],
+	"sobrando2": [
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"pagamentos_futuros": [
+		{ "id": 1, "credor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_pagamento": "2022/04/01", "valor_pago": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "agencia": "1001-1", "cc": "23414-2", "disponibilidade": 1, "tipo_documento": "folha_pagamento", "doc_referencia": "folha jan/2022" },
+		{ "id": 2, "credor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_pagamento": "2022/04/01", "valor_pago": 0.00, "estado": "cancelado", "centro_custos": 1, "banco": 309, "agencia": "1001-1", "cc": "23414-2", "disponibilidade": 1, "tipo_documento": "folha_pagamento", "doc_referencia": "folha jan/2022" },
+		{ "id": 3, "credor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_pagamento": "2022/04/01", "valor_pago": 0.00, "estado": "pago", "centro_custos": 1, "banco": 309, "agencia": "1001-1", "cc": "23414-2", "disponibilidade": 1, "tipo_documento": "folha_pagamento", "doc_referencia": "folha jan/2022" }
+	],
+	"conta_disponibilidade": [
+		{ "id": 1, "tipo": "banco",        "numero_real": "banco 100 ag 1001-1 cc 31341-1", "data_saldo": "2022/04/01", "saldo": 1000.00, "disponivel": "d+1" },
+		{ "id": 2, "tipo": "investimento", "numero_real": "xp 12.345.678.0001/23",          "data_saldo": "2022/04/01", "saldo": 1000.00, "disponivel": "d+15" },
+		{ "id": 3, "tipo": "caixa",        "numero_real": "tesouraria",                     "data_saldo": "2022/04/01", "saldo": 1000.00, "disponivel": "d+0" }
+	], 
+	"recebimentos_futuros": [
+		{ "id": 1, "devedor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_recebimento": "2022/04/01", "valor_recebido": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "disponibilidade": 1, "tipo_documento": "boleto", "doc_referencia": "folha jan/2022" },
+		{ "id": 2, "devedor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_recebimento": "2022/04/01", "valor_recebido": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "disponibilidade": 1, "tipo_documento": "boleto", "doc_referencia": "folha jan/2022" },
+		{ "id": 3, "devedor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_recebimento": "2022/04/01", "valor_recebido": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "disponibilidade": 1, "tipo_documento": "boleto", "doc_referencia": "folha jan/2022" }
+	],
+	"movimentacao_financeira": [
+		{ "id": 1, "data_movimento": "2022/04/01", "tipo": "retirada", "valor":  300000.00, "historico": "pagamento funcionarios (folha)", "disponibilidade": 1 },
+		{ "id": 2, "data_movimento": "2022/04/01", "tipo": "deposito", "valor":   50000.00, "historico": "aporte do sócio X", "disponibilidade": 1 },
+		{ "id": 3, "data_movimento": "2022/04/01", "tipo": "recebimento", "valor": 1000.00, "historico": "prestacao 1/3 nota fiscal 2022/52", "disponibilidade": 1 },
+		{ "id": 4, "data_movimento": "2022/04/01", "tipo": "pagamento", "valor": 2000000.00, "historico": "compra reposicao estoques COFAP nf. 2022/53913", "disponibilidade": 1 },
+		{ "id": 5, "data_movimento": "2022/04/01", "tipo": "pagamento", "valor":   30000.00, "historico": "pagamento imposto sindicato comercio Campos/RJ", "disponibilidade": 1 }
+	],
+	"": [
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"separacao": [
+		{ "id": 1, "nota_fiscal": 2, "separador": "João", "dthr_inicio": "2022/04/01 08:02:15", "estoque": 1, "dthr_termino": "2022/04/01 08:03:00", "conferente": "Pedro", "dthr_conf": "2022/04/01 08:03:10", "dthr_term": "2022/04/01 08:03:10", "estado": "separado"  },
+		{ "id": 2, "nota_fiscal": 5, "separador": "João", "dthr_inicio": "2022/04/01 08:03:15", "estoque": 1, "dthr_termino": "2022/04/01 08:04:00", "conferente": "Pedro", "dthr_conf": "2022/04/01 08:03:10", "dthr_term": "2022/04/01 08:03:10", "estado": "conferido"  },
+		{ "id": 3, "nota_fiscal": 4, "separador": "João", "dthr_inicio": "2022/04/01 08:05:15", "estoque": 1, "dthr_termino": "2022/04/01 08:05:20", "conferente": "Pedro", "dthr_conf": "2022/04/01 08:03:10", "dthr_term": "2022/04/01 08:03:10", "estado": "cancelado"  },
+		{ "id": 4, "nota_fiscal": 1, "separador": "João", "dthr_inicio": "2022/04/01 08:07:15", "estoque": 1, "dthr_termino": "",                    "conferente": "",      "dthr_conf": "",                    "dthr_term": "",                    "estado": "andamento"  },
+		{ "id": 5, "nota_fiscal": 3, "separador": "",     "dthr_inicio": "",                    "estoque": 1, "dthr_termino": "",                    "conferente": "",      "dthr_conf": "",                    "dthr_term": "",                    "estado": "esperando"  }
+	],
+	"separacao_produtos": [
+		{ "id": 1, "separacao": 1, "produto": 1, "quant": 1, "cod_barras": "78913414214", "endereco": "AR01D02P3A4" },
+		{ "id": 2, "separacao": 1, "produto": 2, "quant": 10, "cod_barras": "78242424314", "endereco": "AR01D02P3A5" },
+		{ "id": 3, "separacao": 2, "produto": 1, "quant": 1, "cod_barras": "78913414214", "endereco": "AR01D02P3A4" }
+	], 
+	"conferencia_produtos": [
+		{ "id": 1, "separacao": 1, "produto": 1, "quant": 1, "cod_barras": "78913414214", "endereco": "AR01D02P3A4" },
+		{ "id": 2, "separacao": 1, "produto": 2, "quant": 10, "cod_barras": "78242424314", "endereco": "AR01D02P3A5" },
+		{ "id": 3, "separacao": 2, "produto": 1, "quant": 1, "cod_barras": "78913414214", "endereco": "AR01D02P3A4" }
+	],
+	"fornecedor_entrega": [
+		{ "id": 1, "fornecedor": 1, "nota_compra": "2022/342424", "dthr_chegada": "2022/04/01 10:00:00", "estado": "aguardando" },
+		{ "id": 2, "fornecedor": 2, "nota_compra": "2022/5433", "dthr_chegada": "2022/04/01 10:00:00", "estado": "conferindo" },
+		{ "id": 3, "fornecedor": 1, "nota_compra": "2022/342425", "dthr_chegada": "2022/04/01 10:00:00", "estado": "aceita" },
+		{ "id": 4, "fornecedor": 1, "nota_compra": "2022/342426", "dthr_chegada": "2022/04/01 10:00:00", "estado": "devolvida" }
+	],
+	"chegada_produtos": [
+		{ "id": 1, "fornecedor_entrega": 1, "dthr_conferencia": "2022/04/01 10:05:01", "estoquista": 1, "produto": 1, "quantidade": 10, "cod_bar": "78913414214" },
+		{ "id": 2, "fornecedor_entrega": 2, "dthr_conferencia": "2022/04/01 10:05:01", "estoquista": 1, "produto": 2, "quantidade": 1,  "cod_bar": "78242424314" },
+		{ "id": 3, "fornecedor_entrega": 1, "dthr_conferencia": "2022/04/01 10:05:01", "estoquista": 1, "produto": 1, "quantidade": 10, "cod_bar": "78913414214" },
+		{ "id": 4, "fornecedor_entrega": 3, "dthr_conferencia": "2022/04/01 10:05:01", "estoquista": 1, "produto": 1, "quantidade": 10, "cod_bar": "78913414214" },
+		{ "id": 5, "fornecedor_entrega": 4, "dthr_conferencia": "2022/04/01 10:05:01", "estoquista": 1, "produto": 1, "quantidade": 10, "cod_bar": "78913414214" },
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"devolucao": [
+		{ "id": 1, "dthr_dev": "2022/04/01 10:05:00", "nota_fiscal": 1, "funcionario": 1, "produto": 1, "qtd_recebida": 5, "retorna_estoque": 5, "obs": "5 ok", "estado": "aceita" },
+		{ "id": 2, "dthr_dev": "2022/04/01 10:05:00", "nota_fiscal": 1, "funcionario": 1, "produto": 2, "qtd_recebida": 5, "retorna_estoque": 3, "obs": "3 ok, 2 ruim", "estado": "aceita" },
+		{ "id": 2, "dthr_dev": "2022/04/01 10:05:00", "nota_fiscal": 2, "funcionario": 1, "produto": 2, "qtd_recebida": 3, "retorna_estoque": 0, "obs": "3 ok", "estado": "rejeitada" }
+	],
+	"defeituosos": [
+		{ "id": 1, "produto": 3, "data": "2022/04/01", "obs": "encontrado defeito na repinboca" },
+		{ "id": 2, "produto": 1, "data": "2022/04/01", "obs": "encontrado defeito na parafuseta" },
+		{ "id": 3, "produto": 1, "data": "2022/04/01", "obs": "encontrado defeito na repinboca" }
+	], 
+	"troca": [
+		{ "id": 1, "nota_fiscal": 3, "dthr_solicitacao": "2022/04/01 10:10:05", "obs": "cliente recebeu errado", "estado": "aceito" },
+		{ "id": 2, "nota_fiscal": 3, "dthr_solicitacao": "2022/04/01 10:10:05", "estado": "solicitado" },
+		{ "id": 3, "nota_fiscal": 1, "dthr_solicitacao": "2022/04/01 10:10:05", "estado": "rejeitado" },
+		{ "id": 4, "nota_fiscal": 2, "dthr_solicitacao": "2022/04/01 10:10:05", "estado": "cancelado" }
+	],
+	"troca_produtos": [
+		{ "id": 1, "troca": 1, "produto_volta": 1, "quant_volta": 1, "produto_sai": 2, "quant_sai": 2 },
+		{ "id": 2, "troca": 1, "produto_volta": 1, "quant_volta": 1, "produto_sai": 2, "quant_sai": 2 },
+		{ "id": 3, "troca": 1, "produto_volta": 1, "quant_volta": 1, "produto_sai": 2, "quant_sai": 2 },
+		{ "id": 4, "troca": 2, "produto_volta": 1, "quant_volta": 1, "produto_sai": 2, "quant_sai": 2 },
+		{ "id": 5, "troca": 2, "produto_volta": 1, "quant_volta": 1, "produto_sai": 2, "quant_sai": 2 }
+	],
+	"sobrando": [
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"servico": [
+		{ "id": 1, "nome": "cadastro usuario/senha/direitos",  "custo":  70.00, "fila": "A", "nivel_servico": 1, "obs": "molezinha"  },
+		{ "id": 2, "nome": "alteracao direitos",               "custo":  50.00, "fila": "A", "nivel_servico": 1, "obs": "molezinha"  },
+		{ "id": 3, "nome": "bug sitema informação",            "custo": 150.00, "fila": "B", "nivel_servico": 2, "obs": "molezinha"  },
+		{ "id": 4, "nome": "nova funcionalidade p/sist. inf.", "custo": 500.00, "fila": "C", "nivel_servico": 3, "obs": "molezinha"  },
+		{ "id": 5, "nome": "instalar máquina nova",            "custo": 100.00, "fila": "D", "nivel_servico": 4, "obs": "molezinha"  },
+		{ "id": 6, "nome": "máquina com defeito hw",           "custo": 200.00, "fila": "D", "nivel_servico": 5, "obs": "molezinha"  },
+		{ "id": 7, "nome": "reinstalar s.o. ruim",             "custo":  50.00, "fila": "D", "nivel_servico": 6, "obs": "molezinha"  },
+		{ "id": 8, "nome": "instalar software",                "custo":  50.00, "fila": "D", "nivel_servico": 7, "obs": "molezinha"  }
+	],
+	"tecnico": [
+		{ "id":  1, "funcionario": 12, "nome": "Marina",      "estado": "ferias" },	
+		{ "id":  2, "funcionario": 13, "nome": "Pedro",       "estado": "indisponivel" },
+		{ "id":  3, "funcionario": 14, "nome": "Lucas",       "estado": "disponivel" }, 
+		{ "id":  4, "funcionario": 15, "nome": "Mateus" ,     "estado": "alocado" },    
+		{ "id":  5, "funcionario": 16, "nome": "Reginaldo",   "estado": "indisponivel" },
+		{ "id":  6, "funcionario": 17, "nome": "Hélio",       "estado": "indisponivel" },
+		{ "id":  7, "funcionario": 11, "nome": "Fernando",    "estado": "atendendo" },  
+		{ "id":  8, "funcionario": 18, "nome": "Carla",       "estado": "indisponivel" },
+		{ "id":  9, "funcionario": 19, "nome": "Marcia",      "estado": "indisponivel" },
+		{ "id": 10, "funcionario": 20, "nome": "Cristina",    "estado": "indisponivel" },
+		{ "id": 11, "funcionario": 21, "nome": "Henrique",    "estado": "disponivel" }  
+	],                                                                                      
+	"tecnicos_servicos": [
+		{ "id":  1, "tecnico":  1, "servico": 1 },
+		{ "id":  2, "tecnico":  2, "servico": 1 },
+		{ "id":  3, "tecnico":  3, "servico": 2 },
+		{ "id":  4, "tecnico":  3, "servico": 7 },
+		{ "id":  5, "tecnico":  4, "servico": 3 },
+		{ "id":  6, "tecnico":  5, "servico": 3 },
+		{ "id":  7, "tecnico":  6, "servico": 4 },
+		{ "id":  8, "tecnico":  7, "servico": 2 },
+		{ "id":  9, "tecnico":  7, "servico": 4 },
+		{ "id": 10, "tecnico":  8, "servico": 5 },
+		{ "id": 11, "tecnico":  9, "servico": 5 },
+		{ "id": 12, "tecnico": 10, "servico": 7 },
+		{ "id": 13, "tecnico": 11, "servico": 7 }
+	], 
+	"solicitacao": [
+		{ "id":  1, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  2, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  3, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  4, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  5, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  6, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  7, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  8, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id":  9, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id": 10, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id": 11, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 1, "fila": 0, "rank": 0, "obs": "sou novo",              "estado": "terminado" },
+		{ "id": 12, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 2, "fila": 0, "rank": 0, "obs": "sou chato",             "estado": "aguardando" },
+		{ "id": 13, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 3, "fila": 0, "rank": 0, "obs": "bla, não funcionando",  "estado": "avaliado" },
+		{ "id": 14, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 7, "fila": 0, "rank": 0, "obs": "SO ruim, não funciona", "estado": "aguardando" },
+		{ "id": 15, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 7, "fila": 0, "rank": 0, "obs": "tela azul",             "estado": "cancelado" },
+		{ "id": 16, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 4, "fila": 3, "rank": 1, "obs": "quero uma tela nova",   "estado": "priorizado" },
+		{ "id": 17, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 5, "fila": 4, "rank": 1, "obs": "máquina lenta",         "estado": "retrabalho" },
+		{ "id": 18, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 6, "fila": 0, "rank": 0, "obs": "máquina ruim",          "estado": "iniciado" },
+		{ "id": 19, "cliente": "Zé das Coves", "dthr_solicitado": "2022/04/01 07:00:00", "servico": 8, "fila": 0, "rank": 0, "obs": "só serve excel",        "estado": "avaliado" }
+	],
+	"atendimentos": [
+		{ "id":  1, "solicitacao":  1, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 11,  "dthr_termino": "2022/04/01 12:31:00", "nota":  5, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id":  2, "solicitacao":  2, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  3, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id":  3, "solicitacao":  3, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  9, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id":  4, "solicitacao":  4, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 11,  "dthr_termino": "2022/04/01 12:31:00", "nota": 10, "obs_tecnico": "molezinha", "obs_cliente": "ok"     },
+		{ "id":  5, "solicitacao":  5, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  7, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id":  6, "solicitacao":  6, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  7, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id":  7, "solicitacao":  7, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  8, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id":  8, "solicitacao":  8, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 11,  "dthr_termino": "2022/04/01 12:31:00", "nota":  7, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id":  9, "solicitacao":  9, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  9, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id": 10, "solicitacao": 10, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  8, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id": 11, "solicitacao": 11, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  8, "obs_tecnico": "molezinha", "obs_cliente": ""  },
+		{ "id": 12, "solicitacao": 13, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  6, "obs_tecnico": "molezinha", "obs_cliente": "lento"  },
+		{ "id": 13, "solicitacao": 17, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 7,   "dthr_termino": "2022/04/01 12:31:00", "nota":  2, "obs_tecnico": "terrivel",  "obs_cliente": "refazer" },
+		{ "id": 14, "solicitacao": 18, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 11,  "dthr_termino": "", "nota":  0, "obs_tecnico": "", "obs_cliente": ""  },
+		{ "id": 15, "solicitacao": 15, "dthr_inicio": "2022/04/01 12:30:00", "tecnico": 11,  "dthr_termino": "2022/04/01 12:31:00", "nota": 10, "obs_tecnico": "molezinha", "obs_cliente": "ok"  }
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"fornecedor": [
+		{ "id": 1, "cnpj": "11.111.111.1111/11", "nome": "COFAP",	"telefone": "22 2222-2222", "email": "contato@cofap.com.br", "dias_entrega": 15, "obs": "encontrar alternativo"  },
+		{ "id": 2, "cnpj": "11.111.111.1111/11", "nome": "Metal Leve",	"telefone": "22 2222-2222", "email": "contato@leve.com.br", "dias_entrega": 10, "obs": ""  },
+		{ "id": 3, "cnpj": "11.111.111.1111/11", "nome": "Bosch",	"telefone": "22 2222-2222", "email": "contato@bosch.com.br", "dias_entrega": 5, "obs": "empurra vela"  }
+	],
+	"orcamento_compras": [
+		{ "id": 1, "fornecedor": 1, "data_solicitacao": "2022/04/01", "data_faturamento": "2022/04/01", "valor": 1000.00, "data_entrega": "2022/04/16", "estado": "cancelado" },
+		{ "id": 2, "fornecedor": 1, "data_solicitacao": "2022/04/01", "data_faturamento": "2022/04/01", "valor": 1000.00, "data_entrega": "2022/04/16", "estado": "editando" },
+		{ "id": 3, "fornecedor": 2, "data_solicitacao": "2022/04/01", "data_faturamento": "2022/04/01", "valor": 1000.00, "data_entrega": "2022/04/16", "estado": "enviado" },
+		{ "id": 4, "fornecedor": 3, "data_solicitacao": "2022/04/01", "data_faturamento": "2022/04/01", "valor": 1000.00, "data_entrega": "2022/04/16", "estado": "faturado" },
+		{ "id": 5, "fornecedor": 2, "data_solicitacao": "2022/04/01", "data_faturamento": "2022/04/01", "valor": 1000.00, "data_entrega": "2022/04/16", "estado": "entregue" }
+	],
+	"orcamento_compra_produtos": [
+		{ "id": 1, "orcamento_compra": 1, "produto": 1, "preco": 10.00, "quantidade": 1000.0, "desconto": 0.00 },
+		{ "id": 2, "orcamento_compra": 1, "produto": 2, "preco": 1.00, "quantidade": 10000.0, "desconto": 0.01 },
+		{ "id": 3, "orcamento_compra": 1, "produto": 3, "preco": 5.00, "quantidade":   500.0, "desconto": 0.00 },
+		{ "id": 4, "orcamento_compra": 1, "produto": 4, "preco": 15.00, "quantidade":  100.0, "desconto": 0.05 }
+	], 
+	"categorias": [
+		{ "id": 1, "nome": "amortecedor" },
+		{ "id": 2, "nome": "pistão" },
+		{ "id": 3, "nome": "pastilha" },
+		{ "id": 4, "nome": "bico injetor" }
+	],
+	"fornecedor_produtos": [
+		{ "id":  1, "fornecedor": 1, "produto": 1, "ultimo_preco": 11.00  },
+		{ "id":  2, "fornecedor": 1, "produto": 2, "ultimo_preco": 12.00  },
+		{ "id":  3, "fornecedor": 1, "produto": 3, "ultimo_preco": 13.00  },
+		{ "id":  4, "fornecedor": 1, "produto": 4, "ultimo_preco": 14.00  },
+		{ "id":  5, "fornecedor": 2, "produto": 3, "ultimo_preco": 15.00  },
+		{ "id":  6, "fornecedor": 2, "produto": 4, "ultimo_preco": 16.00  },
+		{ "id":  7, "fornecedor": 2, "produto": 5, "ultimo_preco": 17.00  },
+		{ "id":  8, "fornecedor": 2, "produto": 6, "ultimo_preco": 18.00  },
+		{ "id":  9, "fornecedor": 3, "produto": 1, "ultimo_preco": 19.00  },
+		{ "id": 10, "fornecedor": 3, "produto": 6, "ultimo_preco": 20.00  },
+		{ "id": 11, "fornecedor": 3, "produto": 7, "ultimo_preco": 21.00  },
+		{ "id": 12, "fornecedor": 3, "produto": 8, "ultimo_preco": 22.00  },
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"departamento": [
+		{ "id": 1, "nome": "TI", 		"centro_custo":  1, "gerente":  1, "telefone": "22 2222-2222"  },
+		{ "id": 2, "nome": "engenharia",	"centro_custo":  6, "gerente":  4, "telefone": "22 2222-2222"  },
+		{ "id": 3, "nome": "vendas", 		"centro_custo": 10, "gerente": 13, "telefone": "22 2222-2222"  },
+		{ "id": 4, "nome": "financeiro", 	"centro_custo": 16, "gerente": 12, "telefone": "22 2222-2222"  },
+		{ "id": 5, "nome": "estoque",		"centro_custo": 19, "gerente": 17, "telefone": "22 2222-2222"  },
+		{ "id": 6, "nome": "compras",		"centro_custo": 24, "gerente": 19, "telefone": "22 2222-2222"  },
+		{ "id": 7, "nome": "RH",		"centro_custo": 27, "gerente": 20, "telefone": "22 2222-2222"  },
+		{ "id": 8, "nome": "Admin",		"centro_custo": 30, "gerente": 21, "telefone": "22 2222-2222"  }
+	],
+	"funcionario": [
+		{ "id":  1, "nome": "vinicius",	"departamento":  1, "salario_base": 7000.00, "filhos_menores": 1, "proximas_ferias": "2022/05/01", "aniversario": "2022/06/01", "sindicato": 2, "estado": "ok" },
+		{ "id":  2, "nome": "kiko",	"departamento":  1, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/06/01", "aniversario": "2022/07/01", "sindicato": 3, "estado": "ok" },
+		{ "id":  3, "nome": "rogerio",	"departamento":  1, "salario_base": 7000.00, "filhos_menores": 1, "proximas_ferias": "2022/07/01", "aniversario": "2022/08/01", "sindicato": 1, "estado": "ok" },
+		{ "id":  4, "nome": "mark",	"departamento":  2, "salario_base": 7000.00, "filhos_menores": 1, "proximas_ferias": "2022/08/01", "aniversario": "2022/09/01", "sindicato": 2, "estado": "ok" },
+		{ "id":  5, "nome": "philippe",	"departamento":  2, "salario_base": 7000.00, "filhos_menores": 1, "proximas_ferias": "2022/09/01", "aniversario": "2022/10/01", "sindicato": 3, "estado": "ok" },
+		{ "id":  6, "nome": "diego",	"departamento":  2, "salario_base": 7000.00, "filhos_menores": 1, "proximas_ferias": "2022/10/01", "aniversario": "2022/11/01", "sindicato": 1, "estado": "ok" },
+		{ "id":  7, "nome": "matheus",	"departamento":  2, "salario_base": 7000.00, "filhos_menores": 1, "proximas_ferias": "2022/11/01", "aniversario": "2022/12/01", "sindicato": 2, "estado": "ok" },
+		{ "id":  8, "nome": "fábio",	"departamento":  2, "salario_base": 7000.00, "filhos_menores": 1, "proximas_ferias": "2022/12/01", "aniversario": "2023/01/01", "sindicato": 3, "estado": "ok" },
+		{ "id":  9, "nome": "breno",	"departamento":  2, "salario_base": 7000.00, "filhos_menores": 2, "proximas_ferias": "2023/01/01", "aniversario": "2023/02/01", "sindicato": 1, "estado": "ok" },
+		{ "id": 10, "nome": "márcio",	"departamento":  2, "salario_base": 7000.00, "filhos_menores": 2, "proximas_ferias": "2023/02/01", "aniversario": "2023/03/01", "sindicato": 2, "estado": "ok" },
+		{ "id": 11, "nome": "fernando",	"departamento":  1, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+		{ "id": 12, "nome": "Olga",	"departamento":  4, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 13, "nome": "Marco",   	"departamento":  3, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 14, "nome": "Lucas",   	"departamento":  3, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 15, "nome": "Mateus",  	"departamento":  3, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 16, "nome": "Reginaldo","departamento":  3, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "dem" },
+                { "id": 17, "nome": "Hélio",   	"departamento":  5, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 18, "nome": "Carla",   	"departamento":  8, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 19, "nome": "Conceição","departamento":  6, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 20, "nome": "Wanda",	"departamento":  7, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "ok" },
+                { "id": 21, "nome": "Henrique",	"departamento":  8, "salario_base": 7000.00, "filhos_menores": 0, "proximas_ferias": "2022/04/01", "aniversario": "2022/05/01", "sindicato": 1, "estado": "fer" }
+	], 
+	"verbas": [
+		{ "id":  1, "nome": "salario",		"provento_desconto": "provento", "tipo_base": "mes",  "valor_unitario": 0.00, "percentual": 100.00 },
+		{ "id":  2, "nome": "salario_familia",	"provento_desconto": "provento", "tipo_base": "mes",  "valor_unitario": 0.00, "percentual":   0.00 },
+		{ "id":  3, "nome": "hora_extra",	"provento_desconto": "provento", "tipo_base": "hora", "valor_unitario": 0.00, "percentual": 100.00 },
+		{ "id":  4, "nome": "1/3 ferias",	"provento_desconto": "provento", "tipo_base": "mes",  "valor_unitario": 0.00, "percentual":  33.33 },
+		{ "id":  5, "nome": "inss",		"provento_desconto": "desconto", "tipo_base": "mes",  "valor_unitario": 0.00, "percentual":  11.00 },
+		{ "id":  6, "nome": "irpf",		"provento_desconto": "desconto", "tipo_base": "mes",  "valor_unitario": 0.00, "percentual":  25.00 },
+		{ "id":  7, "nome": "falta",		"provento_desconto": "desconto", "tipo_base": "dia",  "valor_unitario": 0.00, "percentual":  10.00 },
+		{ "id":  8, "nome": "atraso",		"provento_desconto": "desconto", "tipo_base": "hora", "valor_unitario": 0.00, "percentual":  10.00 },
+		{ "id":  9, "nome": "sindicato",	"provento_desconto": "desconto", "tipo_base": "dia",  "valor_unitario": 0.00, "percentual": 100.00 },
+		{ "id": 10, "nome": "fgts",		"provento_desconto": "neutro",   "tipo_base": "mes",  "valor_unitario": 0.00, "percentual":   8.00 }
+	],
+	"incidencias": [
+		{ "id":  1, "verba":  1, "calculo":  5, "multiplicador": 1.00 },
+		{ "id":  2, "verba":  3, "calculo":  5, "multiplicador": 1.00 },
+		{ "id":  3, "verba":  4, "calculo":  5, "multiplicador": 1.00 },
+		{ "id":  4, "verba":  7, "calculo":  5, "multiplicador": 1.00 },
+		{ "id":  5, "verba":  8, "calculo":  5, "multiplicador": 1.00 },
+		{ "id":  6, "verba":  9, "calculo":  5, "multiplicador": 1.00 },
+		{ "id":  7, "verba":  1, "calculo":  6, "multiplicador": 1.00 },
+		{ "id":  8, "verba":  3, "calculo":  6, "multiplicador": 1.00 },
+		{ "id":  9, "verba":  4, "calculo":  6, "multiplicador": 1.00 },
+		{ "id": 10, "verba":  5, "calculo":  6, "multiplicador": 1.00 },
+		{ "id": 11, "verba":  7, "calculo":  6, "multiplicador": 1.00 },
+		{ "id": 12, "verba":  8, "calculo":  6, "multiplicador": 1.00 },
+		{ "id": 13, "verba":  9, "calculo":  6, "multiplicador": 1.00 },
+		{ "id": 14, "verba":  1, "calculo": 10, "multiplicador": 1.00 }
+	],
+	"pagamentos": [
+		{ "id":  1, "data_pagamento": "2022/04/01", "funcionario":   1, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id":  2, "data_pagamento": "2022/04/01", "funcionario":   1, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id":  3, "data_pagamento": "2022/04/01", "funcionario":   1, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id":  4, "data_pagamento": "2022/04/01", "funcionario":   1, "verba":  10, "base": 7000.00, "valor":  560.00 },
+		{ "id":  5, "data_pagamento": "2022/04/01", "funcionario":   2, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id":  6, "data_pagamento": "2022/04/01", "funcionario":   2, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id":  7, "data_pagamento": "2022/04/01", "funcionario":   2, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id":  8, "data_pagamento": "2022/04/01", "funcionario":   2, "verba":  10, "base": 7000.00, "valor":  560.00 },
+		{ "id":  9, "data_pagamento": "2022/04/01", "funcionario":   3, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id": 10, "data_pagamento": "2022/04/01", "funcionario":   3, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id": 11, "data_pagamento": "2022/04/01", "funcionario":   3, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id": 12, "data_pagamento": "2022/04/01", "funcionario":   3, "verba":  10, "base": 7000.00, "valor":  560.00 },
+		{ "id": 13, "data_pagamento": "2022/04/01", "funcionario":   4, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id": 14, "data_pagamento": "2022/04/01", "funcionario":   4, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id": 15, "data_pagamento": "2022/04/01", "funcionario":   4, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id": 16, "data_pagamento": "2022/04/01", "funcionario":   4, "verba":  10, "base": 7000.00, "valor":  560.00 },
+		{ "id": 17, "data_pagamento": "2022/04/01", "funcionario":   5, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id": 18, "data_pagamento": "2022/04/01", "funcionario":   5, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id": 19, "data_pagamento": "2022/04/01", "funcionario":   5, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id": 20, "data_pagamento": "2022/04/01", "funcionario":   5, "verba":  10, "base": 7000.00, "valor":  560.00 },
+		{ "id": 21, "data_pagamento": "2022/04/01", "funcionario":   6, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id": 22, "data_pagamento": "2022/04/01", "funcionario":   6, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id": 23, "data_pagamento": "2022/04/01", "funcionario":   6, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id": 24, "data_pagamento": "2022/04/01", "funcionario":   6, "verba":  10, "base": 7000.00, "valor":  560.00 },
+		{ "id": 25, "data_pagamento": "2022/04/01", "funcionario":   7, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id": 26, "data_pagamento": "2022/04/01", "funcionario":   7, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id": 27, "data_pagamento": "2022/04/01", "funcionario":   7, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id": 28, "data_pagamento": "2022/04/01", "funcionario":   7, "verba":  10, "base": 7000.00, "valor":  560.00 },
+		{ "id": 29, "data_pagamento": "2022/04/01", "funcionario":   8, "verba":   1, "base": 7000.00, "valor": 7000.00 },
+		{ "id": 30, "data_pagamento": "2022/04/01", "funcionario":   8, "verba":   5, "base": 7000.00, "valor":  770.00 },
+		{ "id": 31, "data_pagamento": "2022/04/01", "funcionario":   8, "verba":   6, "base": 7000.00, "valor": 1750.00 },
+		{ "id": 32, "data_pagamento": "2022/04/01", "funcionario":   8, "verba":  10, "base": 7000.00, "valor":  560.00 }
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
+{
+	"centro_custo": [
+		{ "id":  1, "nome": "TI Geral",			"departamento":  1, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  2, "nome": "TI Capacitação",		"departamento":  1, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  3, "nome": "TI Operações",		"departamento":  1, "valor_mensal":  1000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  4, "nome": "TI Suporte",		"departamento":  1, "valor_mensal":  1000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  5, "nome": "TI Manutenção",		"departamento":  1, "valor_mensal":  1000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  6, "nome": "Eng Geral",		"departamento":  2, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  7, "nome": "Eng Capacitação",		"departamento":  2, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  8, "nome": "Eng Desenv. Novos Prod.",	"departamento":  2, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id":  9, "nome": "Eng Desenv. Software",	"departamento":  2, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 10, "nome": "Vendas Geral",		"departamento":  3, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 11, "nome": "Vendas Capacitação",	"departamento":  3, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 12, "nome": "Vendas Premiação",		"departamento":  3, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 13, "nome": "Vendas Prospetar Cliente",	"departamento":  3, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 14, "nome": "Vendas Fidelização",	"departamento":  3, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 15, "nome": "Vendas Propaganda",	"departamento":  3, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 16, "nome": "Financeiro Geral",		"departamento":  4, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 17, "nome": "Financeiro Capacitação",	"departamento":  4, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 18, "nome": "Financeiro Invest",	"departamento":  4, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 19, "nome": "Estoque Geral",		"departamento":  5, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 20, "nome": "Estoque Manut. Equip.",	"departamento":  5, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 21, "nome": "Estoque Treinamento",	"departamento":  5, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 22, "nome": "Estoque Proj. Coletores",	"departamento":  5, "valor_mensal": 50000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 23, "nome": "Estoque Proj. Robotização","departamento":  5, "valor_mensal": 50000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 24, "nome": "Compras Geral",		"departamento":  6, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 25, "nome": "Compras Visitas Eventos",	"departamento":  6, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 26, "nome": "Compras Capacitação",	"departamento":  6, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 27, "nome": "RH Geral",			"departamento":  7, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 28, "nome": "RH Capacitação",		"departamento":  7, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 29, "nome": "RH Terceirizados",		"departamento":  7, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 30, "nome": "Admin. Geral",		"departamento":  8, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 31, "nome": "Admin. Capacitação",	"departamento":  8, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 32, "nome": "Admin. Eventos",		"departamento":  8, "valor_mensal": 10000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 },
+		{ "id": 33, "nome": "Admin. Terceirizados",	"departamento":  8, "valor_mensal":  5000.00, "gasto_mensal": 0.00, "resultado_mensal": 0.00 }
+	],
+	"historico_consumo_ccusto": [
+		{ "id": 1, "ccusto": 1, "data": "2022/04/01", "historico": "gasto com...", "valor": 100.00 },
+		{ "id": 2, "ccusto": 2, "data": "2022/04/01", "historico": "gasto com...", "valor": 100.00 },
+		{ "id": 3, "ccusto": 3, "data": "2022/04/01", "historico": "gasto com...", "valor": 100.00 },
+		{ "id": 4, "ccusto": 4, "data": "2022/04/01", "historico": "gasto com...", "valor": 100.00 },
+		{ "id": 5, "ccusto": 4, "data": "2022/04/01", "historico": "trasferencia para cc 3", "valor": 500.00 },
+		{ "id": 6, "ccusto": 3, "data": "2022/04/01", "historico": "recebe trasferencia do cc 4", "valor": -500.00 }
+	], 
+	"historico_resultados_ccusto": [
+		{ "id": 1, "ccusto": 4, "data": "2022/04/01", "historico": "suporte funcionario parado 1h bug sistema", "valor_beneficio": 100.00 },
+		{ "id": 2, "ccusto": 4, "data": "2022/04/01", "historico": "suporte funcionario parado 2h bug sistema", "valor_beneficio": 200.00 },
+		{ "id": 3, "ccusto": 4, "data": "2022/04/01", "historico": "suporte funcionario parado 1h bug sistema", "valor_beneficio": 100.00 },
+		{ "id": 4, "ccusto": 4, "data": "2022/04/01", "historico": "suporte funcionario parado 1d bug sistema", "valor_beneficio": 800.00 },
+		{ "id": 5, "ccusto": 4, "data": "2022/04/01", "historico": "suporte funcionario parado 1h bug sistema", "valor_beneficio": 100.00 },
+		{ "id": 6, "ccusto": 5, "data": "2022/04/01", "historico": "suporte impressora parada 1h bug sistema 1% operação venda", "valor_beneficio": 50.00 }
+	],
+	"sobrando": [
+	],
+	"sobrando2": [
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+{
+	"projeto": [
+		{ "id": 1, "titulo": "Desenvolver sistema gestão de vendedores", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "editando", "valor_beneficio": 5000.00, "justificativa": "Aumento da eficiência da gestão de vendedores" },
+		{ "id": 2, "titulo": "Melhoria acesso mercadorias estoque", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "editando", "valor_beneficio": 5000.00, "justificativa": "acelera tempo entrega produtos, gerando satisfação clientes, aumento vendas" },
+		{ "id": 3, "titulo": "Fidelizacao Clientes", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "aguardando aprovação", "valor_beneficio": 50000.00, "justificativa": "aumenta faturamento mensal" },
+		{ "id": 4, "titulo": "dev. Produto XPTO", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "aprovado", "valor_beneficio": 10000.00, "justificativa": "novo proudto inédito, inovador, futura fonte de receitas"  },
+		{ "id": 5, "titulo": "dev. Sugestão de Vendas automatizada", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "executando", "valor_beneficio": 10000.00, "justificativa": "aumenta vendas/faturamento sobre base atual de clientes, aumenta desemp. futuro vendas empresa"  },
+		{ "id": 6, "titulo": "Treinamento Vendedores", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "pausado", "valor_beneficio": 10000.00, "justificativa": "aumenta capacidade de vendas/faturamento empresa, participação no mercado, fidelização clientes"  },
+		{ "id": 7, "titulo": "Cabeamento Estruturado", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "cancelado", "valor_beneficio": 10000.00, "justificativa": "melhora disponibilidade da rede interna (velocidade acesso)"  },
+		{ "id": 8, "titulo": "Vacinação COVID", "gerente": 3, "dt_inicio": "2022/04/01", "dt_termino": "2022/04/02", "ccusto": 101, "planejado": 0.00, "agregado": 0.00, "realizado": 0.00, "reserva_gerencial": 1000.00, "reserva_riscos": 1000.00, "estado": "encerrado", "valor_beneficio": 10000.00, "justificativa": "saúde, bem estar, frequência presencial"  }
+	],
+	"pacotes_trabalho": [
+		{ "id": 1, "projeto": 1, "titulo": "cadastro vendedor", "descrição": "o gerente de vendas deve ser capaz de cadastrar novos vendedores, bem como manter as informações necessárias", "valor_benefício_estimado": 0.00 },
+		{ "id": 1, "projeto": 1, "titulo": "definição de metas mensais de cada vendedor", "descrição": "o gerente de vendas deve ser capaz de cadastrar novos vendedores, bem como manter as informações necessárias", "valor_benefício_estimado": 0.00 },
+		{ "id": 1, "projeto": 1, "titulo": "consulta produtividade vendas mensais de cada vendedor", "descrição": "o gerente de vendas deve ser capaz de cadastrar novos vendedores, bem como manter as informações necessárias", "valor_benefício_estimado": 0.00 },
+		{ "id": 1, "projeto": 1, "titulo": "consulta percentual de clientes da área trabalhados pelo vendedor", "descrição": "o gerente de vendas deve ser capaz de cadastrar novos vendedores, bem como manter as informações necessárias", "valor_benefício_estimado": 0.00 },
+		{ "id": 1, "projeto": 1, "titulo": "consulta ranking melhores vendedores mês", "descrição": "o gerente de vendas deve ser capaz de cadastrar novos vendedores, bem como manter as informações necessárias", "valor_benefício_estimado": 0.00 }
+	],
+	"atividades": [
+		{ "id": 1, "projeto": 1, "pacote": 1, "titulo": "reunião com o usuário ou P.O. para desenhar solução",	"tempo_horas_uteis": 6, "inicio": "2022/04/01", "orientacoes": "" },
+		{ "id": 2, "projeto": 1, "pacote": 1, "titulo": "criar casos de uso", 					"tempo_horas_uteis": 2, "inicio": "2022/04/02", "orientacoes": "" },
+		{ "id": 3, "projeto": 1, "pacote": 1, "titulo": "criar api serviço consulta",				"tempo_horas_uteis": 2, "inicio": "2022/04/03", "orientacoes": "" },
+		{ "id": 4, "projeto": 1, "pacote": 1, "titulo": "criar api serviço persistência", 			"tempo_horas_uteis": 2, "inicio": "2022/04/04", "orientacoes": "" },
+		{ "id": 5, "projeto": 1, "pacote": 1, "titulo": "melhorar a Interface usuário (UI, UX)", 		"tempo_horas_uteis": 6, "inicio": "2022/04/05", "orientacoes": "" },
+		{ "id": 6, "projeto": 1, "pacote": 1, "titulo": "criar tabela banco de dados", 				"tempo_horas_uteis": 1, "inicio": "2022/04/08", "orientacoes": "" },
+		{ "id": 7, "projeto": 1, "pacote": 1, "titulo": "homologação interna", 					"tempo_horas_uteis": 6, "inicio": "2022/04/09", "orientacoes": "" },
+		{ "id": 8, "projeto": 1, "pacote": 1, "titulo": "aceitação junto com o usuário", 			"tempo_horas_uteis": 2, "inicio": "2022/04/10", "orientacoes": "" }
+	], 
+	"atividade_recursos": [
+		{ "id":  1, "atividade":  1, "funcionario": 20, "outros_recursos": "datashow, sala de reuniões, especialista da área, café, água, biscoito", "outros_custos":		40.00, "obs": "especialista da área é o gerente de vendas"  },
+		{ "id":  2, "atividade":  1, "funcionario":  1, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id":  3, "atividade":  1, "funcionario":  2, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id":  4, "atividade":  1, "funcionario":  3, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id":  5, "atividade":  1, "funcionario":  4, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id":  6, "atividade":  1, "funcionario":  5, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id":  7, "atividade":  1, "funcionario":  6, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id":  8, "atividade":  2, "funcionario":  1, "outros_recursos": "", "outros_custos":		0.00, "obs": "reponsável por modelagem de processos da empresa"  },
+		{ "id":  9, "atividade":  3, "funcionario":  2, "outros_recursos": "", "outros_custos":		0.00, "obs": "dev para api serviço"  },
+		{ "id": 10, "atividade":  4, "funcionario":  3, "outros_recursos": "", "outros_custos":		0.00, "obs": "dev para api serviço"  },
+		{ "id": 11, "atividade":  5, "funcionario":  4, "outros_recursos": "", "outros_custos":		0.00, "obs": "dev para UI e UX"  },
+		{ "id": 12, "atividade":  6, "funcionario":  5, "outros_recursos": "", "outros_custos":		0.00, "obs": "AD/DBA (reponsável pelas info/bancos)"  },
+		{ "id": 13, "atividade":  7, "funcionario":  6, "outros_recursos": "", "outros_custos":		0.00, "obs": "reponsável por QA"  },
+		{ "id": 14, "atividade":  8, "funcionario":  1, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id": 15, "atividade":  8, "funcionario":  2, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id": 16, "atividade":  8, "funcionario":  3, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id": 17, "atividade":  8, "funcionario":  4, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id": 18, "atividade":  8, "funcionario":  5, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id": 19, "atividade":  8, "funcionario":  6, "outros_recursos": "", "outros_custos":		0.00, "obs": ""  },
+		{ "id": 20, "atividade":  8, "funcionario": 20, "outros_recursos": "datashow, sala de reuniões, especialista da área, café, água, biscoito", "outros_custos":		20.00, "obs": ""  }
+	],
+	"atividades_executadas": [
+		{ "id": 1, "atividade": 1, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado": 100.00, "perc_gasto": 100.00, "estado": "pronta", "obs": "top, finalizado" },
+		{ "id": 2, "atividade": 2, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado": 100.00, "perc_gasto":  90.00, "estado": "pronta", "obs": "top, economizou" },
+		{ "id": 3, "atividade": 3, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado":  90.00, "perc_gasto": 100.00, "estado": "terminando", "obs": "já,já termina, final" },
+		{ "id": 4, "atividade": 4, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado":   5.00, "perc_gasto":  50.00, "estado": "iniciada", "obs": "começou agora" },
+		{ "id": 5, "atividade": 5, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado":   0.00, "perc_gasto":  50.00, "estado": "cancelada", "obs": "desistência do usuário" },
+		{ "id": 6, "atividade": 6, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado":  30.00, "perc_gasto": 120.00, "estado": "atraso", "obs": "errou, vai refazer" },
+		{ "id": 7, "atividade": 7, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado":   0.00, "perc_gasto":   0.00, "estado": "esperando", "obs": "" },
+		{ "id": 8, "atividade": 8, "dthr_inicio": "2022/04/01 09:00:01", "dthr_termino": "2022/04/01 09:00:02", "perc_agregado":   0.00, "perc_gasto":   0.00, "estado": "esperando", "obs": "" }
+	],
+	"profile": {
+	    "name": "typicode"
+	}
+}
+
+
