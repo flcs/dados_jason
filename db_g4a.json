@@ -1,5 +1,5 @@
 {
-	"pagamento_futuro": [
+	"pagamentos_futuros": [
 		{ "id": 1, "credor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_pagamento": "2022/04/01", "valor_pago": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "agencia": "1001-1", "cc": "23414-2", "disponibilidade": 1, "tipo_documento": "folha_pagamento", "doc_referencia": "folha jan/2022" },
 		{ "id": 2, "credor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_pagamento": "2022/04/01", "valor_pago": 0.00, "estado": "cancelado", "centro_custos": 1, "banco": 309, "agencia": "1001-1", "cc": "23414-2", "disponibilidade": 1, "tipo_documento": "folha_pagamento", "doc_referencia": "folha jan/2022" },
 		{ "id": 3, "credor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_pagamento": "2022/04/01", "valor_pago": 0.00, "estado": "pago", "centro_custos": 1, "banco": 309, "agencia": "1001-1", "cc": "23414-2", "disponibilidade": 1, "tipo_documento": "folha_pagamento", "doc_referencia": "folha jan/2022" }
@@ -9,7 +9,7 @@
 		{ "id": 2, "tipo": "investimento", "numero_real": "xp 12.345.678.0001/23",          "data_saldo": "2022/04/01", "saldo": 1000.00, "disponivel": "d+15" },
 		{ "id": 3, "tipo": "caixa",        "numero_real": "tesouraria",                     "data_saldo": "2022/04/01", "saldo": 1000.00, "disponivel": "d+0" }
 	], 
-	"recebimento_futuro": [
+	"recebimentos_futuros": [
 		{ "id": 1, "devedor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_recebimento": "2022/04/01", "valor_recebido": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "disponibilidade": 1, "tipo_documento": "boleto", "doc_referencia": "folha jan/2022" },
 		{ "id": 2, "devedor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_recebimento": "2022/04/01", "valor_recebido": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "disponibilidade": 1, "tipo_documento": "boleto", "doc_referencia": "folha jan/2022" },
 		{ "id": 3, "devedor": "11.111.111.1111/11", "valor": 1000.00, "data_abertura": "2022/04/01", "data_vencimento": "2022/04/01", "data_recebimento": "2022/04/01", "valor_recebido": 0.00, "estado": "aberto", "centro_custos": 1, "banco": 309, "disponibilidade": 1, "tipo_documento": "boleto", "doc_referencia": "folha jan/2022" }
